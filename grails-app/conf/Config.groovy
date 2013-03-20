@@ -32,10 +32,12 @@ grails.converters.encoding="UTF-8"
 // enabled native2ascii conversion of i18n properties files
 grails.enable.native2ascii = true
 
+jqueryUi.minified = false
 // set per-environment serverURL stem for creating absolute links
 environments {
     production {
         grails.serverURL = "http://www.changeme.com"
+        jqueryUi.minified = true
     }
     development {
         grails.serverURL = "http://localhost:8080/${appName}"
@@ -73,7 +75,6 @@ log4j = {
     warn   'org.mortbay.log'
 }
 
-jqueryUi.minified = false
 jqueryUi.cdn = "googlecode"
 
 
